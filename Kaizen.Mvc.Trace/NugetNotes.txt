@@ -1,0 +1,4 @@
+﻿
+cd E:\arpanvgm\Packages
+nuget  pack E:\arpanvgm\vsts\PerformanceChecker\Kaizen.Mvc.Trace\Kaizen.Mvc.Trace.csproj -IncludeReferencedProjects
+=============

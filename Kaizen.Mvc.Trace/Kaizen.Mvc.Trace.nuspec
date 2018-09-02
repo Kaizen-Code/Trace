@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.4</version>
+    <title>$title$</title>
+    <authors>Kaizen</authors>
+    <owners>Kaizen, arpanvgm</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <!--<projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Kaizen MVC Trace is developed to trace execution time taken by each action methods</description>
+    <releaseNotes>Core Performance service project is merged with this project </releaseNotes>
+    <copyright>Copyright © 2018</copyright>
+    <tags>Kaizen MVC Performance Trace Execution Time</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    
+  </files>
+</package>

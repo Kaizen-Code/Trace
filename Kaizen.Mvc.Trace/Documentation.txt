@@ -1,0 +1,33 @@
+﻿This is a generic and plugable tool, developer can add this tool in any existing MVC application.
+It can be removed any time, even it can be disabled anytime by just setting true value in appSettings.
+
+By use of this tool, developer will find average execution time, minimum execution time and maximum time of each action method.
+
+This tool will help you to find out action methods which are taking highest time to execute during its life cycle, so that developer can focus on those aciton methods. It may be happened that a page can have more than one ajax calls. It will also help you to give summary of particular action method.
+
+Just add following configuration into <configuration> section of Web.config to find consolidate report of execution time taken by action methods.
+------------
+	<system.webServer> <!--for IIS 7.0 running in Integrated Mode-->
+		<handlers>
+			<add name="kaizen" verb="*" path="kaizen.axd" type="Kaizen.Mvc.Trace.Handler"/>
+		</handlers>
+	</system.webServer>
+After adding configuration given above, user will be able to see cosolidate report on Url like http://{domain}/kaizen.axd
+
+	For example: http://localhost:54004/Kaizen.axd
+
+By default execution time will be displayed in Milliseconds. You can pass query string 'reporttype=Ticks' if you want to see execution time in Ticks format.
+
+	For example: http://localhost:54004/Kaizen.axd?reporttype=Ticks
+
+----------
+Optional configuration to  disable/enable Kaizen.Mvc.Trace : 
+
+	<appSettings>
+		<add key="DisableKaizenMvcTrace" value="true"/>
+	</appSettings>
+
+----------
+Notes :
+Right now this tool holds maximum 500 hundred requests to show consolidate report. Developer will get report based on latest 500 requests only. It holds like first in first out after having collection of 500 requrests.
+
