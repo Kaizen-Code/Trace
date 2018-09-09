@@ -5,10 +5,10 @@
     <version>1.0.4</version>
     <title>$title$</title>
     <authors>Kaizen</authors>
-    <owners>Kaizen, arpanvgm</owners>
+    <owners>$author$</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
-    <!--<projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <projectUrl>https://github.com/Kaizen-Code/Trace</projectUrl>
+    <iconUrl>https://drive.google.com/uc?export=download&id=1OFunrUhaPEWRGKsNQBayi8AhJx_pKHow</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Kaizen MVC Trace is developed to trace execution time taken by each action methods</description>
     <releaseNotes>Core Performance service project is merged with this project </releaseNotes>
